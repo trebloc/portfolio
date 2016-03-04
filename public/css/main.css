@@ -46,6 +46,11 @@ h1 span {
   top: 200px;
 }
 
+
+.soon {
+  top: 500px;
+}
+
 .navbar navbar-default {
   background-color: black;
 }
