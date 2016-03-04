@@ -5,6 +5,13 @@ body {
   background-color: #ECF0F1;
 }
 
+.row {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+
+
 .jumbotron {
   background-image: url("../images/building.jpg");
   background-size: cover;
@@ -12,7 +19,6 @@ body {
   height: 640px;
   opacity: 0.8;
   margin-top: -20px;
-  width: 110%;
 }
 
 h1 span { 
@@ -51,10 +57,6 @@ h1 span {
   top: 500px;
 }
 
-.navbar {
-  width: 105%;
-}
-
 li {
   font-size: 20px;
 }
@@ -62,7 +64,6 @@ li {
 footer {
     padding: 50px 0;
     background-color: black;
-    width: 110%;
 }
 
 .light {
