@@ -12,6 +12,7 @@ body {
   height: 640px;
   opacity: 0.8;
   margin-top: -20px;
+  width: 110%;
 }
 
 h1 span { 
@@ -50,8 +51,8 @@ h1 span {
   top: 500px;
 }
 
-.navbar navbar-default {
-  background-color: black;
+.navbar {
+  width: 105%;
 }
 
 li {
@@ -61,10 +62,7 @@ li {
 footer {
     padding: 50px 0;
     background-color: black;
-}
-
-footer p {
-    margin: 0;
+    width: 110%;
 }
 
 .light {
