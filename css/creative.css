@@ -202,6 +202,10 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+
+.fa-3x {
+  padding: 10px;
+}
 .section-heading {
   margin-top: 0;
 }
