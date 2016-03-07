@@ -43,6 +43,9 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+li {
+  list-style: none;
+}
 .bg-primary {
   background-color: #00003D;
 }
