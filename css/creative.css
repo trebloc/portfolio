@@ -46,6 +46,10 @@ p {
 li {
   list-style: none;
 }
+.img-circle {
+  width: 20%;
+  height: 20%;
+}
 .bg-primary {
   background-color: #00003D;
 }
