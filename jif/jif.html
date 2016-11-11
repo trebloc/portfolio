@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<title></title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css?family=Arvo:400,700,300,100');
+    @import url('http://fonts.googleapis.com/css?family=Arvo');
+    [style*="Arvo"]
+    @import url('https://fonts.googleapis.com/css?family=Oswald:400,700,300,100');
+    @import url('http://fonts.googleapis.com/css?family=Oswald');
+    [style*="Oswald"] {
+    font-family: 'Roboto Slab', 'Oswald', Cambria, Courier, Georgia, serif !important;
+    }
+
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    body{Maygin:0; padding:0;}
+    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; Maygin:0; padding:0; width:100% !important;}
+
+    /* iOS BLUE LINKS */
+    .appleBody a {color:#047a8d; text-decoration: none;}
+    .appleFooter a {color:#ffffff; text-decoration: none;}
+
+    sup {
+        font-size: 0.8em;
+        vertical-align: super;
+        line-height: 0;
+    }
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 525px) {
+
+        /* FULL-WIDTH TABLES */
+        table[class="responsive-table"]{
+          width:100% !important;
+        }
+
+        table[class="container"]{
+          width: 100% !important;
+          min-width: 100% !important;
+          height: auto !important;
+        }
+
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        *[class="mobile-hide"]{display:none !important;}
+        *[class="full-hide"]{display:block !important;
+            color: #ef384e !important;
+        }
+
+        *[class="mobile-show"]{
+          display: table !important;
+          width: 100% !important;
+          height:auto !important;
+          overflow:visible !important;
+          visibility:visible !important;
+          border:none !important;
+          max-height: 200% !important;
+          vertical-align: top !important;
+        }
+
+        img[class="img-max"] {
+            max-width: 100% !important;
+            height:auto !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        td[class="padding"]{
+          padding: 10px 5% 10px 5% !important;
+          text-align: center !important;
+        }
+
+        td[class="padding-only"]{
+          padding: 10px 5% 10px 5% !important;
+        }
+
+        td[class="padding-meta"]{
+          padding: 20px 5% 20px 5% !important;
+          text-align: center !important;
+        }
+
+        td[class="padding-text-left"]{
+          padding: 10px 5% 10px 5% !important;
+          text-align: left !important;
+        }
+
+        td[class="padding-copy"]{
+          padding: 0 5% 0 5% !important;
+          text-align: center !important;
+        }
+
+        td[class="padding-top"]{
+          padding: 40px 5% 0px 5% !important;
+          text-align: center !important;
+        }
+
+        td[class="top-only"]{
+          padding: 20px 0 0 0 !important;
+        }
+
+        td[class="no-padding"]{
+          padding: 0 !important;
+          text-align: center !important;
+        }
+
+        td[class="mainimg"]{
+          padding: 0 0 0 0 !important;
+        }
+
+        /* ADJUST ALIGNMENT ON MOBILE */
+        td[class="centerimg"] img{
+          margin:0 auto!important;
+        }
+
+        /* ADJUST BUTTONS ON MOBILE */
+        td[class="mobile-wrapper"]{
+            padding: 10px 5% 15px 5% !important;
+        }
+
+        table[class="mobile-button-container"]{
+            margin:0 auto !important;
+            width:100% !important;
+        }
+
+        a[class="mobile-button"]{
+            width:80% !important;
+            padding: 20px !important;
+            border: 2px 2px !important;
+            font-size: 16px !important;
+            text-align: center !important;
+        }
+
+        a[class="mobile-button-left"]{
+            width:80% !important;
+            padding: 20px !important;
+            border: 2px 2px !important;
+            font-size: 16px !important;
+            text-align: left !important;
+        }
+
+        /* CANSPAM Buttons */
+        a[class=footer-button]{
+            display:block !important;
+            font-size:14px !important;
+            font-weight:bold !important;
+            padding:12px 4px 12px 4px !important;
+            line-height:18px !important;
+            background:#fe7600 !important;
+            margin:10px auto !important;
+            width:60% !important;
+            text-align:center !important;
+            color:#ffffff !important;
+            text-decoration:none !important;
+        }
+    }
+</style>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+</head>
+<body style="Margin: 0; padding: 0;">
+<!-- HEADER -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width:580px;">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" class="responsive-table">
+                            <!-- LOGO -->
+                            <tr>
+                                <td align="center" bgcolor="#333333">
+                                    <a href="http://www.jif.com?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank">
+                                        <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/jif-logo.jpg" width="165" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #095697; font-size: 32px;" alt="JIF" border="0" />
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- HEADER -->
+
+            <!-- UPDATE YOUR PROFILE -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td bgcolor="#fe7600" align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                            <!-- HERO IMAGE -->
+                                <tr>
+                                    <td bgcolor="#fe7600" class="mainimg" align="center">
+                                        <a href="http://www.jif.com/recipes/chocolate-chip-peanut-pancakes-8543?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank" alias="Kid">
+                                            <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-hero.jpg" width="580" border="0" alt="Kid" style="display: block; color: #84766b; font-family: Cambria, Courier, Georgia, serif, 'Roboto Slab'; font-size: 12px; line-height: 16px;" class="img-max">
+                                        </a>
+                                    </td>
+                                </tr>
+                            <!-- HERO IMAGE -->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- MAIN RECIPE -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td bgcolor="#ffffff" align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" width="580" class="responsive-table">
+                            <tr>
+                                <td class="no-padding" align="center">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                        <!-- HERO IMAGE -->
+                                        <tr>
+                                            <td style="padding: 35px 0 0 0;" class="mainimg" align="center">
+                                                <a href="http://www.jif.com/recipes/details/spiced-peanut-butter-cookies-7640?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank" alias="Main Callout–Spiced Cookies">
+                                                    <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-hero-cookie-jar.jpg" width="580" border="0" alt="Spiced Cookies" style="display: block; color: #84766b; font-family: Cambria, Courier, Georgia, serif, 'Roboto Slab'; font-size: 12px; line-height: 16px;" class="img-max">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="padding-text-left" style="color: #000000;font-family: 'Oswald', serif; font-size: 20px; line-height: 25px; font-weight: 700; text-align: left; text-transform: none; padding: 15px 0 15px 0; border-bottom: 2px solid; border-color: #cccccc;">
+                                                Spiced Peanut Butter Cookies
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding: 10px 0 0 0;" class="padding-text-left">
+                                                <table width="240" border="0" cellspacing="0" cellpadding="0" align="left">
+                                                    <tr>
+                                                        <td style="color: #000000; font-family: 'Oswald', serif; font-size: 14px; font-weight: normal; text-transform: uppercase; text-align: left; padding: 0 0 0 0;">
+                                                            42 Min
+                                                        </td>
+                                                        <td style="color: #000000; font-family: 'Oswald', serif; font-size: 14px; font-weight: normal; text-transform: uppercase; text-align: left; padding: 0 0 0 0;">
+                                                            7 Ingredients
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 15px; line-height: 22px; font-family: 'Arvo', serif; color: #000000; text-align: left; padding: 15px 0 0 0;" class="padding-text-left">
+                                                Watch the leaves change colors with a peanut butter cookie inspired by fall. Made using <strong>Jif<sup style="font-size: 10px; line-height: 0; vertical-align: 4px">&reg;</sup></strong> Extra Crunchy Peanut Butter, these cookies are filled with warm cinnamon-sugar flavor.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 20px 0 40px 0;">
+                                                <!-- BULLETPROOF BUTTON -->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                                    <tr>
+                                                        <td align="left" style="padding: 0;" class="padding">
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                                <tr>
+                                                                    <td align="left">
+                                                                        <a href="http://www.jif.com/recipes/details/spiced-peanut-butter-cookies-7640?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" alias="Main Callout–Spiced Cookies" style="font-size: 16px;font-family: 'Oswald', serif; font-weight: 500; color: #000000; text-transform: uppercase; text-decoration: none; background-color: #ffffff; border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 2px solid #000000; padding: 7px 20px; display: inline-block;" class="mobile-button-left">
+                                                                            View Recipe
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- MAIN RECIPE -->
+
+            <!-- RECIPES SECTION -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td bgcolor="#ffffff" align="center" class="no-padding">
+                        <table border="0" cellpadding="0" cellspacing="0" width="580" class="responsive-table">
+                            <tr>
+                                <td>
+                                    <!-- TWO COLUMNS -->
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td valign="top">
+                                                <!-- LEFT COLUMN -->
+                                                <table cellpadding="0" cellspacing="0" border="0" width="260" align="left" class="responsive-table">
+                                                    <tr>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle" style="padding: 40px 0 0 0;" class="mainimg">
+                                                            <a href="http://www.jif.com/recipes/details/chocolate-hazelnut-apple-rings-6900?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank" alias="Recipe 1–Hazelnut Apple Rings">
+                                                                <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-recipe-2.jpg" width="260" style="display: block; color: #84766b; font-family: Cambria, Courier, Georgia, serif, 'Roboto Slab'; font-size: 12px; line-height: 16px;" alt="Recipe 1–Hazelnut Apple Rings" border="0" class="img-max">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="color: #000000;font-family: 'Oswald', serif; font-size: 16px; line-height: 24px; font-weight: bold; text-align: left; text-transform: none; padding: 25px 0 15px 0; border-bottom: 2px solid; border-color: #cccccc;" class="padding-text-left">
+                                                            Chocolate Hazelnut Apple Rings
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 10px 0 0 0;" class="padding-text-left">
+                                                            <table width="260" border="0" cellspacing="0" cellpadding="0" align="center" class="responsive-table">
+                                                                <tr>
+                                                                    <td style="color: #000000; font-family: 'Oswald', serif; font-size: 14px; font-weight: normal; text-transform: uppercase; text-align: left; padding: 0 0 0 0;">
+                                                                        10 Minutes
+                                                                    </td>
+                                                                    <td style="color: #000000; font-family: 'Oswald', serif; font-size: 14px; font-weight: normal; text-transform: uppercase; text-align: left; padding: 0 0 0 0;">
+                                                                        3 ingredients
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 20px 0 0 0;" class="no-padding">
+                                                            <!-- BULLETPROOF BUTTON -->
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                                                <tr>
+                                                                    <td align="left" style="padding: 0;" class="padding">
+                                                                        <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                                            <tr>
+                                                                                <td align="left">
+                                                                                    <a href="http://www.jif.com/recipes/details/chocolate-hazelnut-apple-rings-6900?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank" alias="Recipe 1–Hazelnut Apple Rings" style="font-size: 16px;font-family: 'Oswald', serif; font-weight: 500; color: #000000; text-transform: uppercase; text-decoration: none; background-color: #ffffff; border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 2px solid #000000; padding: 7px 20px; display: inline-block;" class="mobile-button-left">
+                                                                                        Gotta Make It
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- RIGHT COLUMN -->
+                                                <table cellpadding="0" cellspacing="0" border="0" width="260" align="right" class="responsive-table">
+                                                    <tr>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle" style="padding: 40px 0 0 0;" >
+                                                            <a href="http://www.jif.com/recipes/details/pumpkin-cashew-dip-7395?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank" alias="Recipe 2–Pumpkin Dip">
+                                                                <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-recipe-3.jpg" width="260" style="display: block; color: #84766b; font-family: Cambria, Courier, Georgia, serif, 'Roboto Slab'; font-size: 12px; line-height: 16px;" alt="Recipe 2–Pumpkin Dip" border="0" class="img-max">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="color: #000000;font-family: 'Oswald', serif; font-size: 16px; line-height: 24px; font-weight: bold; text-align: left; text-transform: none; padding: 25px 0 15px 0; border-bottom: 2px solid; border-color: #cccccc;" class="padding-text-left">
+                                                            Pumpkin Cashew Dip
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 10px 0 0 0;" class="padding-text-left">
+                                                            <table width="260" border="0" cellspacing="0" cellpadding="0" align="center" class="responsive-table">
+                                                                <tr>
+                                                                    <td style="color: #000000; font-family: 'Oswald', serif; font-size: 14px; font-weight: normal; text-transform: uppercase; text-align: left; padding: 0 0 0 0;">
+                                                                        35 Minutes
+                                                                    </td>
+                                                                    <td style="color: #000000; font-family: 'Oswald', serif; font-size: 14px; font-weight: normal; text-transform: uppercase; text-align: left; padding: 0 0 0 0;">
+                                                                        6 Ingredients
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 20px 0 40px 0;">
+                                                            <!-- BULLETPROOF BUTTON -->
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                                                <tr>
+                                                                    <td align="left" style="padding: 0;" class="padding-copy">
+                                                                        <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                                            <tr>
+                                                                                <td align="center">
+                                                                                    <a href="http://www.jif.com/recipes/details/pumpkin-cashew-dip-7395?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" alias="Recipe 2–Pumpkin Dip" style="font-size: 16px;font-family: 'Oswald', serif; font-weight: 500; color: #000000; text-transform: uppercase; text-decoration: none; background-color: #ffffff; border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 2px solid #000000; padding: 7px 20px; display: inline-block;" class="mobile-button-left">
+                                                                                        Have to Try It
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- RECIPES SECTION -->
+
+            <!-- UPDATE YOUR PROFILE -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="padding: 30px 0 0 0;" class="no-padding">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                            <tr>
+                                <td bgcolor="#006699" style="color: #ffffff; font-family: 'Oswald', serif; font-size: 20px; text-align: center; text-transform: uppercase; font-weight: 200; padding: 25px 0 25px 0;" class="padding">
+                                    Tell us about yourself. <a href="%%=RedirectTo(MicrositeURL(52460,'bu','7205313'))=%%" target="_blank" alias="Profile Center" style="font-weight: 500; color: #ffffff;">
+                                        Update your profile. &raquo;
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- UPDATE YOUR PROFILE -->
+
+            <!-- NEW SECTION -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="padding: 40px 0 0 0;">
+                        <!-- TITLE -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="580" align="center" class="responsive-table">
+                            <tr>
+                                <td style="color: #000000;font-family: 'Oswald', serif; font-size: 20px; line-height: 25px; font-weight: 700; text-align: center; text-transform: none; letter-spacing: 1.2px" class="padding-copy">
+                                    Create Your Own Peanut Butter Moment
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- TITLE -->
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" width="580" align="center" class="responsive-table">
+                            <!-- CONTENT -->
+                            <tr>
+                                <td style="padding: 30px 0 35px 0;" align="center" class="padding-top">
+                                    <!-- COPY -->
+                                    <table border="0" cellspacing="0" cellpadding="0" width="325" align="left" class="responsive-table">
+                                        <tr>
+                                            <td align="left" valign="top" style="color: #000000; font-family: 'Oswald', serif; font-size: 16px; line-height: 26px; font-weight: 700; text-align: left; text-transform: none; width: 295px;">
+                                                Add Fall Flavor to Your Breakfast
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" style="font-size: 15px; line-height: 22px; font-family: 'Arvo', serif; color: #000000; padding: 5px 0 0 0; width: 295px;">
+                                                Welcome every fall morning with the warm taste of cinnamon and apples. Simply spread Jif<sup style="font-size: 10px; line-height: 0; vertical-align: 4px">&reg;</sup> Peanut Butter and Naturally Flavored Maple Spread Cinnamon Spread on freshly sliced apples for a delicios breakfast treat or anytime snack.
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-top: 25px;" align="left">
+                                                <a href="http://www.jif.com/buy-jif?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank" alias="Product Callout–Breakfast Spreads" style="font-size: 16px;font-family: 'Oswald', serif; font-weight: 500; color: #000000; text-transform: uppercase; text-decoration: none; background-color: #ffffff; border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 2px solid #000000; padding: 7px 20px; display: inline-block;" class="mobile-button-left">
+                                                    Find in Store
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- IMAGE -->
+                                    <table border="0" cellspacing="0" cellpadding="0" width="250" align="right" class="responsive-table">
+                                        <tr>
+                                            <td align="center" valign="top" style="padding: 0 0 10px 0;" class="padding-only">
+                                                <a href="http://www.jif.com/buy-jif?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank" alias="Product Callout–Breakfast Spreads">
+                                                    <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-cinnamon-jar.jpg" alt="Breakfast Spreads" width="200" border="0" style="display: block;" class="img-max">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- CONTENT -->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- NEW SECTION -->
+
+            <!-- NEW SECTION -->
+            <table bgcolor="ffcc00" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td align="center">
+                        <table bgcolor="ffcc00" border="0" cellpadding="0" cellspacing="0" width="580" align="center" class="responsive-table">
+                            <!-- CONTENT -->
+                            <tr>
+                                <td style="padding: 45px 0 0 0;" align="center" class="padding-top">
+                                    <!-- IMAGE -->
+                                    <table border="0" cellspacing="0" cellpadding="0" width="250" align="left" class="responsive-table">
+                                        <tr>
+                                            <td align="center" valign="top" style="padding: 10px 0 10px 0; width: 250px;">
+                                                <a href="http://www.jif.com/?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016  " target="_blank" alias="Product Callout–Breakfast Spreads">
+                                                    <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-jif-jars.png" alt="website callout" width="250" border="0" style="display: block;" class="img-max">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- COPY -->
+                                    <table border="0" cellspacing="0" cellpadding="0" width="295" align="right" class="responsive-table">
+                                        <tr>
+                                            <td align="center" valign="top" style="color: #ffffff;font-family: 'Oswald', serif;; font-size: 35px; line-height: 40px; font-weight: 700; text-align: center; text-transform: uppercase; width: 295px;" class="mainimg">
+                                                <em>Jif&nbsp;<sup style="font-size: 13px; line-height: 0; letter-spacing: 1; vertical-align: 25px">&reg;</sup></em> Has A New<br> Look!
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="top" style="font-size: 15px; line-height: 22px; font-family: 'Arvo', serif; color: #000000; padding: 5px 0 0 0; width: 295px;">
+                                                Did you hear the news? <strong>Jif</strong><sup style="font-size: 10px; line-height: 0; vertical-align: 4px; text-align: center;">&reg;</sup> has a new website! Get more information on the products and recipies you love on the new Jif.com!
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 25px 0 40px 0;" align="center">
+                                                <a href="http://www.jif.com/?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Oct2016" target="_blank" alias="website callout" style="font-size: 16px;font-family: 'Oswald', serif; font-weight: 500; color: #000000; text-transform: uppercase; text-decoration: none; background-color: #ffffff; border-top: 0px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; border-right: 0px solid #000000; padding: 7px 20px; display: inline-block;" class="mobile-button">
+                                                    Take Me There
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- CONTENT -->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- NEW SECTION -->
+
+            <!-- SOCIAL -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td align="center" style="padding: 0 0 0 0;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" bgcolor="#333333">
+                          <tr>
+                                <td align="center" class="padding">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="580" class="responsive-table">
+                                        <tr>
+                                            <td style="color: #ffffff;font-family:'Oswald', sans-serif; font-size: 25px; font-weight: 500; letter-spacing: 1px; text-align: center; text-transform: uppercase; padding: 30px 0 0 0" class="padding">
+                                                Stay In Touch
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: #ffffff;font-family: 'Arvo', serif; font-size: 15px; font-weight: normal; text-align: center; text-transform: none;" class="padding">
+                                                Follow <strong>Jif<sup style="font-size: 10px; line-height: 0; vertical-align: 4px">&reg;</sup></strong> on social for more everyday greatness.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 15px 0 15px 0;" align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="290" align="center" >
+                                                    <tr>
+                                                        <td align="center">
+                                                            <a href="https://www.facebook.com/Jif" target="_blank" alias="Facebook">
+                                                                <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-icon-facebook.png" width="12" border="0" style="display: block;" />
+                                                            </a>
+                                                        </td>
+                                                        <td align="center">
+                                                            <a href="https://twitter.com/Jif" target="_blank" alias="Twitter">
+                                                                <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-icon-twitter.png" width="22" border="0" style="display: block;" />
+                                                            </a>
+                                                        </td>
+                                                        <td align="center">
+                                                            <a href="http://pinterest.com/jifpeanutbutter" target="_blank" alias="Pinterest">
+                                                                <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-icon-pinterest.png" width="21" border="0" style="display: block;" />
+                                                            </a>
+                                                        </td>
+                                                        <td align="center">
+                                                            <a href="http://instagram.com/jifbrand" target="_blank" alias="Instagram">
+                                                                <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-icon-instagram.png" width="21" border="0" style="display: block;" />
+                                                            </a>
+                                                        </td>
+                                                        <td align="center">
+                                                            <a href="http://www.youtube.com/user/jifbrand" target="_blank" alias="Youtube">
+                                                                <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-icon-youtube.png" border="0" width="25" style="display: block;" />
+                                                            </a>
+                                                        </td>
+                                                        <td align="center">
+                                                            <a href="http://jifbars.tumblr.com/ " target="_blank" alias="Youtube">
+                                                                <img src="https://image.e.smuckers.com/lib/fe9a13727561077c76/m/1/102016-icon-tumblr.png" border="0" width="20" style="display: block;" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- SOCIAL -->
+
+            <!-- FOOTER -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                    <td bgcolor="#000000" align="center">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                                <td align="center" class="padding-copy">
+                                    <!-- UNSUBSCRIBE  -->
+                                    <table width="580" border="0" cellspacing="0" cellpadding="0" align="center" style="font-size: 11px; line-height: 16px; font-family: Helvetica, Arial, sans-serif; color:#5c4a37;" class="responsive-table">
+                                        <tr>
+                                            <td align="center" valign="middle" style="font-size: 11px; line-height: 16px; font-family: Helvetica, Arial, sans-serif; color:#ffffff; padding: 30px 0 0 0;">
+                                                This email was sent to:<br/> <strong>%%emailaddr%%</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="middle" style="font-size: 11px; line-height: 16px; font-family: Helvetica, Arial, sans-serif; color:#ffffff; padding: 10px 0 0 0;">
+                                                This email was sent by:<br/>
+                                                <strong>%%Member_Busname%%</strong><br/>
+                                                %%Member_Addr%%<br/>
+                                                %%Member_City%%, %%Member_State%% %%Member_PostalCode%%
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="middle" style="font-size: 11px; line-height: 16px; font-family: Helvetica, Arial, sans-serif; color:#ffffff; padding: 10px 0 0 0;">
+                                                <a href="http://www.jif.com/About/Contact?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Aug2016" alias="Contact" target="_blank" style="color: #ffffff;" class="footer-button">
+                                                    Contact
+                                                </a>
+                                                <span class="mobile-hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                                <a href="%%=RedirectTo(MicrositeURL(1042,'bu','7205313'))=%%" alias="Unsubscribe" style="color: #ffffff;" class="footer-button">
+                                                    Unsubscribe
+                                                </a>
+                                                <span class="mobile-hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                                <a href="http://www.jif.com/Home/Privacy?utm_source=JIF&utm_medium=email&utm_campaign=JIF_Newsletter_Aug2016" alias="Privacy Policy" target="_blank" style="color: #ffffff;" class="footer-button">
+                                                    Privacy Policy
+                                                </a>
+                                                <span class="mobile-hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                                <a href="%%=RedirectTo(MicrositeURL(52460,'bu','7205313'))=%%" alias="Profile Cneter" target="_blank" style="color: #ffffff;" class="footer-button">
+                                                    Profile Center
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="middle" style="font-size: 11px; line-height: 16px; font-family: Helvetica, Arial, sans-serif; color:#ffffff; padding: 10px 0 10px 0;">
+                                                &copy;/&trade;/&reg; The J.M. Smucker Company
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<custom name="opencounter" type="tracking">
+</body>
+</html>
