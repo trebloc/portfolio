@@ -1,726 +1,480 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
  xmlns:v="urn:schemas-microsoft-com:vml"
  xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-<title></title>
-<meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Mobile on Windows Phones -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<!-- GOOGLE FONT BACKUP -->
-<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-<style type="text/css">
-    /*GOOGLE FONT IMPORT*/
-    @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
-    [style*="FjallaOne"] {
-    font-family: 'Fjalla One', Arial, Helvetica, sans-serif;
-    }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
 
-    /* CLIENT-SPECIFIC STYLES */
-    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
-    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
-    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
-    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
-    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
-    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+  <title>NatureBox Template</title>
 
-    /* RESET STYLES */
-    body{margin:0; padding:0;}
-    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
-    table{border-collapse:collapse !important;}
-    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+  <style type="text/css">
 
-    /* iOS BLUE LINKS */
-    .appleBody a {color:#047a8d; text-decoration: none;}
-    .appleFooter a {color:#ffffff; text-decoration: none;}
-    a[x-apple-data-detectors] {
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-    }
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300');
+  [style*="Roboto Condensed"] {font-family: 'Roboto Condensed', Arial, sans-serif !important;}
 
-    sup {
-        font-size: 0.75em;
-        vertical-align: super;
-        line-height: 0 !important;
-    }
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro: 400,700italic,700,400italic,300italic,300');
+  [style*="Source Sans Pro"] {font-family: 'Source Sans Pro', Arial, sans-serif !important;}
 
-    /* WEBKIT STYLES */
-    @media screen and (-webkit-min-device-pixel-ratio: {value}) {
-    {style}
-    }
+  /* CLIENT-SPECIFIC STYLES */
+  #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+  .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+  body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
 
-    /* YAHOO STYLES */
-    @media yahoo {
-    {style}
-    }
+  table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+  img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
 
-    /* MOBILE STYLES */
-    @media screen and (max-width: 525px) {
-        /* GMAIL APP - DESKTOP */
-        table[class="container"]{
-            width:100% !important;
-            min-width: 100% !important;
-            height:auto !important;
-        }
-
-        /* FULL-WIDTH TABLES */
-        table[class="responsive-table"]{
-          width:100% !important;
-        }
-        
-        * [class="full-width"]{
-          width:100% !important;
-        }
-
-        /* 100% SCALED IMAGES */
-        img[class="img-max"]{
-          max-width: 100% !important;
-          height:auto !important;
-        }
-
-        /* USE THESE CLASSES TO HIDE/SHOW CONTENT ON MOBILE */
-        *[class="mobile-hide"]{display:none !important;
-            padding: 0 !important;
-            line-height: 0 !important;
-            max-height: 0 !important;
-            height: 0 !important;
-            width: 0 !important;
-        }
-
-        *[class="mobile-show"]{
-            display: table !important;
-            width: 100% !important;
-            height:auto !important;
-            overflow:visible !important;
-            visibility:visible !important;
-            border:none !important;
-            max-height: 200% !important;
-            vertical-align: top !important;
-        }
-
-        *[class="img-mobile"]{
-            width: 100% !important;
-            height:auto !important;
-            display: block !important;
-            overflow:visible !important;
-            visibility:visible !important;
-            border:none !important;
-            max-height: 200% !important;
-        }
-
-        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
-        td[class="padding"]{
-          padding: 10px 3% 15px 3% !important;
-        }
-        
-        td[class="padding1"]{
-          padding: 10px 3% 0 3% !important;
-        }
-
-        td[class="padding-sides"]{
-          padding: 0 3% 0 3% !important;
-        }
-        td[class="padding-sidesTwo"]{
-          padding: 20px 3% 0 3% !important;
-        }
-
-        td[class="padding-top"]{
-          padding: 30px 3% 0px 3% !important;
-        }
-
-        td[class="bottom-only"]{
-          padding: 0 0 20px 0 !important;
-        }
-
-        td[class="top-only"]{
-          padding: 40px 0 0 0 !important;
-        }
-
-        td[class="no-padding"]{
-          padding: 0 !important;
-        }
-
-        td[class="section-padding"]{
-          padding: 40px 3% 30px 3% !important;
-        }
-
-        td[class="text-center"]{
-            text-align: center !important;
-        }
-
-        /* ADJUST BUTTONS ON MOBILE */
-        table[class="mobile-button-container"]{
-            margin:0 auto;
-            width:100% !important;
-        }
-
-        table[class="mobile-button"]{
-            width:80% !important;
-            padding: 15px !important;
-            border: 0 !important;
-            font-size: 16px !important;
-            align-content: center !important;
-        }
-
-        /* CANSPAM Buttons */
-        a[class=footer-button]{
-            display:block !important;
-            font-size:16px !important;
-            padding:15px 20px 15px 20px !important;
-            line-height:18px !important;
-            background:#666666 !important;
-            margin:10px auto !important;
-            width:60% !important;
-            text-align:center !important;
-            color:#ffffff !important;
-            text-decoration:none !important;
-            border-radius: 3px !important;
-            -webkit-border-radius: 3px !important;
-            -moz-border-radius: 3px !important;
-        }
-        table[id="container"] {
-    min-width: 100% !important;
+  /* RESET STYLES */
+  body {
+    margin:0;
+    padding:0;
   }
-  *[class="full-width"] {
+
+  img {
+    border:0;
+    height:auto;
+    line-height:100%;
+    outline:none;
+    text-decoration:none;
+  }
+
+  table {
+    border-collapse:collapse !important;
+  }
+
+  body{
+    height:100% !important;
+    margin:0;
+    padding:0;
+    width:100% !important;
+  }
+
+  /* iOS BLUE LINKS */
+  .appleBody a {
+    color:#047a8d;
+    text-decoration: none;
+  }
+
+  .appleFooter a {
+    color:#555555;
+    text-decoration: none;
+  }
+
+  sup {
+    font-size: 0.8em !important;
+    vertical-align: super !important;
+    line-height: 0 !important;
+  }
+
+  /* MOBILE STYLES */
+  @media screen and (max-width: 525px) {
+
+/*  .avatar {
+    border-radius: 50%;
+    border: 2px solid white;
+  } */
+
+    .container { /* GMAIL APP - FORCE DESKTOP */
+        width:100% !important;
+        min-width: 100% !important;
+        height:auto !important;
+  }
+
+  /* FULL-WIDTH TABLES */
+  .responsive-table {
+        width: 100% !important;
+  }
+
+  .thirty-three {
+    width:33% !important;
+  }
+
+  /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+  .mobile-hide {
+    display:none !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    max-height: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  .mobile-show {
+    display: table !important;
     width: 100% !important;
+    height:auto !important;
+    overflow:visible !important;
+    visibility:visible !important;
+    border:none !important;
+    max-height: 200% !important;
+    vertical-align: top !important;
   }
-  *[class="hide"] {
-    display: none !important;
+
+  .mobile-showbg {
+    display: table !important;
+    width: 100% !important;
+    height:auto !important;
+    overflow:visible !important;
+    visibility:visible !important;
+    border:none !important;
+    max-height: 200% !important;
+    vertical-align: top !important;
+    background-color: #8c2228 !important;
   }
-  img[class="fluid-img"] {
+
+  .img-mobile {
+    width: 100% !important;
+    height:auto !important;
+    display: block !important;
+    overflow:visible !important;
+    visibility:visible !important;
+    border:none !important;
+    max-height: 200% !important;
+  }
+
+  .img-max {
+    width: 100% !important;
+    height:auto !important;
+  }
+
+  .img-mobile50 {
+        width: 50% !important;
+    height:auto !important;
+    display: block !important;
+    overflow:visible !important;
+    visibility:visible !important;
+    border:none !important;
+    max-height: 200% !important;
+    margin: 0 auto !important;
+    padding: 5px 0 5px 0 !important;
+    background-color: #8c2228 !important;
+  }
+
+  .img-50{
+    width: 50%!important;
+    height:auto !important;
+  }
+
+  /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+  .padding {
+    padding: 4% 3% 4% 3% !important;
+    text-align: center !important;
+  }
+
+  .padding-img {
+    padding: 30px 3% 30px 3% !important;
+    text-align: center !important;
+  }
+
+  .padding-header {
+    padding: 5% 0%!important;
+    text-align: center !important;
+  }
+
+  .padding-sides {
+    padding: 0 3% 0 3% !important;
+    text-align: center !important;
+  }
+
+  .padding-top {
+    padding: 4% 0 0 0 !important;
+    text-align: center !important;
+  }
+
+  .padding-bottom {
+    padding: 0 0 4% 0 !important;
+    text-align: center !important;
+  }
+
+  .auto {
     height: auto !important;
-    width: 100% !important;
   }
-  *[class="header"]{
-	width: 100% !important;
-	text-align: center !important;
-  }
-  *[class="no-padding"]{
-  	padding: 0 0 0 0 !important;
-  }
-  *[class="no-margin"]{
-  	margin: 0 0 0 0 !important;
-  }
-  *[class="top-padding"]{
-  	padding: 15px 0 0 0 !important;
-  }
-  * [class="mobile-padding"]{
-	  padding: 30px 10px 0 10px !important;
-  }
-  
-  /* Background image media quries */
-  #hero { background-repeat: no-repeat !important; 
-             background-position: center center !important;
-         -webkit-background-size: cover !important;
-         -moz-background-size: cover !important;
-         -o-background-size: cover !important;
-         background-size: cover  !important;
-         }
 
-         table[class="cta_hero"] {
-            max-width: 255px !important;
-            width: 100% !important;
-         }
-  
-    }
-/* ANDROID CENTER FIX */
-div[style*="margin: 16px 0;"] { margin: 0 !important; }
+  .no-padding {
+    padding: 0 !important;
+  }
+
+  /* ADJUST ALIGNMENT ON MOBILE */
+  .centerimg {
+    margin:0 auto!important;
+  }
+
+  .text-center {
+    text-align: center !important;
+    padding: 2% 3% !important;
+    font-size: 19px !important;
+    line-height: 21px !important;
+    letter-spacing: 1px !important;
+  }
+
+  /* ADJUST BUTTONS ON MOBILE */
+  .mobile-wrapper {
+    padding: 10px 5% 15px 5% !important;
+  }
+
+  .mobile-button-container {
+    margin:0 auto;
+    width:70% !important;
+  }
+
+  .mobile-button {
+    display:block !important;
+    width:65% !important;
+    font-weight:bold !important;
+    border: 0 !important;
+    font-size: 14px !important;
+    margin:0px auto !important;
+    padding:15px !important;
+  }
+
+  /* CANSPM Buttons */
+  .footer-button {
+    display:block !important;
+    font-size:12px !important;
+    font-weight:bold !important;
+    padding:10px 5px 10px 5px !important;
+    line-height:18px !important;
+    background:#56A942 !important;
+    margin:10px auto !important;
+    width:60% !important;
+    text-align:center !important;
+    color:#ffffff !important;
+    text-decoration:none !important;
+    text-transform: uppercase !important;
+  }
+
+  .unsub-text {
+    text-align: center !important;
+    font-size: 11px !important;
+  }
+}
+
 </style>
 <!--[if gte mso 9]><xml>
-      <o:OfficeDocumentSettings>
-      <o:AllowPNG/>
-      <o:PixelsPerInch>96</o:PixelsPerInch>
-      </o:OfficeDocumentSettings>
-    </xml><![endif]-->
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml><![endif]-->
+
 </head>
-<body style="margin: 0; padding: 0;">
-<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-    Lorem ipsum dolor que ist
-</div>
+<body style="margin: 0; padding: 0;" bgcolor="#ffffff">
 
-<!-- OUTER CONTAINER (GMAIL APP - FORCE DESKTOP VIEW) -->
-<table width="100%" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width: 600px;">
-    <!-- PRE-HEADER -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!-- HEADER -->
+<table align="center" width="600" border="0" cellspacing="0" cellpadding="0" style="min-width: 600px!important;" class="container">
+  <tr>
+    <td align="center">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
         <tr>
-            <td bgcolor="#ffffff" style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; text-align: center; padding: 10px 200px 5px 200px;" class="padding1">
-                Problem viewing? <a href="%%view_email_url%%" style="font-weight: bold; text-decoration: none; color:#333333;" class="appleBody">Click to view online &raquo;</a>
-            </td>
+          <td align="center">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" class="responsive-table">
+              <tr>
+                <td align="center">
+                  <!-- VIEW ON BROWSER -->
+                  <table align="center" cellpadding="0" cellspacing="0" border="0" width="600" class="responsive-table">
+                    <tr>
+                      <td align="center" valign="center" style="font-family: Arial, sans-serif; font-size: 12px; color: #555555; padding: 20px 20px;">
+                        <span style="font-family:'Source Sans Pro', Arial, sans-serif !important;">To view this email as a web page, click <a href="%%view_email_url%%" style="color: #555555;">here.</a></span>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- VIEW ON BROWSER -->
+                  <table align="center" cellpadding="0" cellspacing="0" border="0" width="600" class="responsive-table">
+                    <tr>
+                      <td class="padding-bottom" align="center" style="font-family: 'Source Sans Pro', arial, sans-serif; font-size: 14px; color: #005696; font-weight: bold; padding: 0 0 10px 0;">
+                        <a href="https://naturebox.com?utm_source=email&utm_medium=prospect&utm_content=gifting&utm_campaign=sub_prospect_blast_11302016&afid=sub_eprospect_WK5" target="_blank">
+                          <img src="https://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/5/Nature-Box-Logo-Darker-Green-425x52.jpg" alt="NatureBox" border="0" width="300" />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- NAV -->
+                  <table align="center" cellpadding="0" cellspacing="0" border="0" width="600" style="width:600px; margin:0 auto;" class="responsive-table">
+                    <tr>
+                      <td class="no-padding" align="center" style="text-align: center; font-family:'Source Sans Pro', Arial, sans-serif; font-size: 17px; font-weight: normal; color: #555555; padding: 5px 0px 10px 0px; mso-padding-alt: 10px 0px 20px 0px; text-transform: uppercase; letter-spacing:1px;">
+                        <table align="center" cellpadding="0" cellspacing="0" border="0" width="600" class="responsive-table" style="width:600px;">
+                          <tr>
+                            <td class="text-center-caption" align="center" style="text-align: center; font-family: Arial, sans-serif; font-size: 17px; font-weight: normal; color: #555555;">
+                              <span style="font-family:'Source Sans Pro', Arial, sans-serif !important;">
+                                <a href="https://naturebox.com/refer/emailpromo?utm_source=email&utm_medium=lifecycle&utm_content=commoditynuts&utm_campaign=mem_lifecycle_12072016&order_afid=mem_lifecycle_WK1" alt="All Snacks" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #a0a0a0;">My Account</a>
+                              </span>
+                            </td>
+                            <td class="text-center-caption" align="center" style="text-align: center; font-family: Arial, sans-serif; font-size: 17px; font-weight: normal; color: #555555; padding-right: 45px;">
+                              <span style="font-family:'Source Sans Pro', Arial, sans-serif !important;">
+                                <a href="https://naturebox.com/refer/emailpromo?utm_source=email&utm_medium=lifecycle&utm_content=commoditynuts&utm_campaign=mem_lifecycle_12072016&order_afid=mem_lifecycle_WK1" alt="All Snacks" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #a0a0a0;">How It Works</a>
+                              </span>
+                            </td>
+                            <td class="text-center-caption" align="center" style="text-align: center; font-family: Arial, sans-serif; font-size: 17px; font-weight: normal; color: #555555; padding-right: 30px;">
+                              <span style="font-family:'Source Sans Pro', Arial, sans-serif !important;">
+                                <a href="https://naturebox.com/refer/emailpromo?utm_source=email&utm_medium=lifecycle&utm_content=commoditynuts&utm_campaign=mem_lifecycle_12072016&order_afid=mem_lifecycle_WK1" alt="All Snacks" target="_blank" style="text-decoration: none; text-transform: uppercase; color: #a0a0a0;">About</a>
+                              </span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- NAV -->
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-    </table>
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      </table>
+      <!-- HEADER -->
+
+      <!-- MAIN CALLOUT SECTION -->
+      <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
         <tr>
-            <td bgcolor="#ffffff" align="center" style="padding: 20px 0 0 0;" class="no-padding">
-                <table border="0" cellpadding="0" cellspacing="0" width="590" class="responsive-table">
+          <td align="center">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" class="responsive-table">
+              <tr>
+                <td align="center">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" class="responsive-table">
                     <tr>
-                        <td>
-                            <!-- TITLE SECTION AND COPY -->
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align="center" class="padding-sidesTwo">
-                                    <a href="#" target="_blank"><img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-banner.png" width="298" height="33" style="display: block; color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 298px; height: 33px;" alt="Fluid images" border="0" class="img-max"></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
+                      <td align="center">
+                        <table align="center" width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                          <tr>
+                            <td align="center" style="text-align: center; font-family: 'Roboto Condensed', arial, sans-serif; font-size: 23px; color: #235a6c;" class="padding">
+                              <a href="https://naturebox.com/products/detail/tbd-cassava-chips?utm_source=email&utm_medium=lifecycle&utm_content=cassava&utm_campaign=mem_lifecycle_01242017&order_afid=mem_lifecycle_WK4">
+                                <img class="img-max" src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/5/new-sea-salt-cassava-chips-circle-1200x506.png" width="600" alt="Sea Salt Cassava Chips" /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="text-align: center; font-family: Arial, sans-serif; font-size: 18px; color: #443c35; font-weight:600; text-transform: uppercase; padding: 30px 55px 10px 55px;" class="padding">
+                              <span style="font-family:'Source Sans Pro', Arial, sans-serif !important;">Sea Salt Cassava Chips</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="text-align: center; font-family: Arial, sans-serif; font-size: 18px; font-weight: lighter; color: #443c35; padding: 20px 0 20px 0; text-transform: none;" class="padding">
+                              <span style="font-family:'Source Sans Pro', Arial, sans-serif !important;">Cassava, yuca, manioc… whatever you want to call it, these chips are simply delicious! Each cassava is handpicked, crisped to perfection, and sprinkled with sea salt in small batches. With less fat and three times the fiber as a regular potato chip, we think they’re pretty irresistible!
+                              </span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
                     </tr>
-                    <tr>
-                        <td style="padding: 10px 0 20px 0;">
-                            <!-- LEFT COLUMN -->
-                            <table cellpadding="0" cellspacing="0" border="0" width="190" align="left" class="responsive-table">
-                                <tr>
-                                    <td align="center" style="padding: 15px 0 0 0; font-family: Helvetica, Arial, sans-serif; letter-spacing: 1px; color: #a0a0a0; font-size: 18px; text-transform:uppercase;" bgcolor="#ffffff"><a href="#" traget="_blank" style="color: #a0a0a0; text-decoration:none;">Our Snacks</a></td>
-                                </tr>
-                            </table>
-                            <!-- CENTER COLUMN -->
-                            <table cellpadding="0" cellspacing="0" border="0" width="190" align="left" class="responsive-table">
-                                <tr>
-                                    <td align="center" style="padding: 15px 0 0 0; font-family: Helvetica, Arial, sans-serif; color: #a0a0a0; font-size: 18px; text-transform:uppercase;" bgcolor="#ffffff"><a href="#" traget="_blank" style="color: #a0a0a0; text-decoration:none;">How It Works</a></td>
-                                </tr>
-                            </table>
-                            <!-- RIGHT COLUMN -->
-                            <table cellpadding="0" cellspacing="0" border="0" width="190" align="left" class="responsive-table">
-                                <tr>
-                                    <td align="center" style="padding: 15px 0 0 0; font-family: Helvetica, Arial, sans-serif; letter-spacing: 1px; color: #a0a0a0; font-size: 18px; text-transform:uppercase;" bgcolor="#ffffff"><a href="#" traget="_blank" style="color: #a0a0a0; text-decoration:none;">Free Snacks</a></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-    </table>
+      </table>
 
-    <!-- PRE-HEADER -->
-    <!-- LARGE IMAGE SECTION -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <!-- THREE COLUMNS -->
+      <table width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
         <tr>
-            <td bgcolor="#ffffff" align="center" >
-                <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" class="responsive-table" >
+          <td align="center" style="">
+            <table width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;" class="responsive-table">
+              <tr>
+                <td class="no-padding" width="600" style="width: 600px;">
+                  <table class="full-width" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 600px">
                     <tr>
-                        <td class="padding-sides">
-                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                <tr>
-                                   <td>
-                                      <table bgcolor="EFEFEF" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EFEFEF; border-collapse: collapse;">
-                                            <tr>
-                                                <!-- below this, where it says background, put the new link for background image  -->
-                                                <td style="font-family: Arial, Helvetica, sans-serif; color: #ffffff; font-size: 18px; font-weight: bold;text-transform: uppercase;text-align: center; padding: 25px 50px 10px 50px;" valign="bottom" bgcolor="#009999">
-                                                    With your Naturebox Club you save even more on your favorite baked treats!
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <!-- below this, where it says background, put the new link for background image  -->
-                                                <td style="font-family: Arial, Helvetica, sans-serif; color: #ffffff; font-size: 18px; font-weight: normal;text-transform: normal;text-align: center; padding: 0 15px 15px 10px;" bgcolor="#009999">
-                                                    Check 'em out and get 50% off your first order, today.
-                                                </td>
-                                            </tr>                                            
-                                            <!-- Image -->
-                                            <tr>
-                                                <!-- below this, where it says background, put the new link for background image  -->
-                                                <td id="hero">
-                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                                        <tr> 
-                                                            <!-- below this, If Image is a different size please change height accordingly   -->
-                                                            <td width="600">
-                                                                <img class="img-max" src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/Snickerdoodle-hero.jpg" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="600"  alt="SNACK 2" border="0" />
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                         <!-- End Image -->
-                                      </table>
-                                   </td>
-                                </tr>
-                            </table>
-                        </td>
+                      <td class="header" width="600" style="width: 600px;padding: 15px 0 0 10px;" class="top-padding" >
+                        <!-- SNACK 1 -->
+                        <table class="header" width="169" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 169px;">
+                          <tr>
+                            <td class="top-padding" width="169" align="center" style="width: 169px;padding: 0 10px 0 15px;">
+                              <a href="https://naturebox.com/products/detail/bbq-lentil-loops?utm_source=email&utm_medium=lifecycle&utm_content=cassava&utm_campaign=mem_lifecycle_01242017&order_afid=mem_lifecycle_WK4"> <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/5/new-cruncy-bbq-twists-circle-339x370.jpg" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="169" alt="Crunhcy BBQ Twists" border="0" /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 14px;text-align: center; padding: 25px 10px 20px 0px;">
+                              <span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif !important; font-weight:600; text-transform: uppercase; color: #60b148;">New!</span> <span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif !important; font-weight:600; text-transform: uppercase; color: #736d68;">Crunchy<br>BBQ Twists</span>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- END SNACK 1 -->
+                        <!-- SNACK 2 -->
+                        <table class="header" width="169" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 169px;">
+                          <tr>
+                            <td class="top-padding" width="169" align="center" style="width: 169px;padding: 0 10px 0 15px;">
+                              <a href="https://naturebox.com/products/detail/garlic-plantains?utm_source=email&utm_medium=lifecycle&utm_content=cassava&utm_campaign=mem_lifecycle_01242017&order_afid=mem_lifecycle_WK4"> <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/5/garlic-plantains-circle-339x370.jpg" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="169" alt="Garlic Plantains" border="0" /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 14px;text-align: center; padding: 25px 0px 36px 10px;">
+                              <span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif !important;; font-weight:600; text-transform: uppercase; color: #736d68;">Garlic Plantains</span>
+                            </td>
+                          </tr>
+                          </table>
+                        <!-- END SNACK 2 -->
+                        <!-- SNACK 3 -->
+                        <table class="header" width="169" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 169px;">
+                          <tr>
+                            <td class="top-padding" width="169" align="center" style="width: 169px;padding: 0 10px 0 15px;">
+                              <a href="https://naturebox.com/products/detail/asiago-cheddar-cheese-crisps?utm_source=email&utm_medium=lifecycle&utm_content=cassava&utm_campaign=mem_lifecycle_01242017&order_afid=mem_lifecycle_WK4"> <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/5/asiago-cheddar-cheese-crisps-circle-339x370.jpg" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="169" alt="Asiago & Cheddar Cheese Crisps" border="0" /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 14px;text-align: center; padding: 25px 0px 20px 10px;">
+                              <span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif !important; font-weight:600; text-transform: uppercase; color: #736d68;">Asiago &amp; Cheddar Cheese Crisps</span>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- END SNACK 3 -->
+                      </td>
                     </tr>
-                </table>
-            </td>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
-    </table>
-    <!-- LARGE IMAGE SECTION -->
+      </table>
 
-    <!-- LARGE IMAGE SECTION -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <!-- MAIN CALLOUT SECTION -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" style="table-layout: fixed;">
         <tr>
-            <td style="padding-top: 30px;" bgcolor="#ffffff" align="center" >
-                <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" class="responsive-table" >
+          <td bgcolor="#ffffff" align="center" style="padding: 30px 0 0 0;">
+            <table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td align="center" class="padding-copy">
+                  <!-- UNSUBSCRIBE  -->
+                  <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="responsive-table">
                     <tr>
-                        <td class="padding-sides">
-                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                <tr>
-                                   <td>
-                                      <table bgcolor="EFEFEF" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                            <!-- Image -->
-                                            <tr>
-                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                                        <tr> 
-                                                            <!-- below this, If Image is a different size please change height accordingly   -->
-                                                            <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 18px; font-weight: bold;text-transform: uppercase;text-align: center;" valign="bottom">
-                                                                New this month!<br>
-                                                                Crispy Snickerdoodles
-                                                            </td>
-                                                        </tr>   
-                                                        <tr> 
-                                                            <!-- below this, If Image is a different size please change height accordingly   -->
-                                                            <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 18px; font-weight:normal;text-align: center; padding-top: 22px;" valign="bottom">
-                                                                Remember your grandma's oh so delicious snickerdoodles? These babies have the same dlicious cinnamon sugar goodness but are baked to crispy perfection that's so unique you won't find them anywhere else.
-                                                            </td>
-                                                        </tr>                                                          
-                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                                    <tr>
-                                                                        <td style="padding:35px 0 0 0;" align="center" class="padding">
-                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
-                                                                                <tr>
-                                                                                    <td align="center" class="padding-sides">
-                                                                                        <!-- BULLETPROOF BUTTON -->
-                                                                                        <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
-                                                                                            <tr>
-                                                                                                <td align="center" style="-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;" bgcolor="#61b24a" style="background-color:#61b24a;">
-                                                                                                    <a href="https://litmus.com" target="_blank" style="font-family: Helvetica, Arial, sans-serif; color:#ffffff; text-decoration: none; font-size:18px; letter-spacing: 1px; text-transform: none;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 17px 19px; border:1px solid #61b24a; display: inline-block;" class="mobile-button">
-                                                                                                            <!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;&nbsp;<![endif]-->
-                                                                                                            Get 50% off your first order
-                                                                                                            <!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;&nbsp;<![endif]-->
-                                                                                                    </a>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </table><!-- Container -->
-                                                <!--[if gte mso 9]>
-                                                </v:textbox>
-                                                </v:rect>
-                                                <![endif]-->
-                                                </td>
-                                            </tr>
-                                            <!-- End Image -->
-                                      </table>
-                                   </td>
-                                </tr>
-                            </table>
+                      <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #666666; padding: 30px 0 0 0;">
+                        <a href="http://www.facebook.com/naturebox" target="_blank"><img src="https://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-fb.png" width="30" height="30" style=" color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 30px; height: 30px; padding-right: 5px;" alt="Facebook" border="0"></a>&nbsp;
+                        <a href="http://www.twitter.com/naturebox" target="_blank"><img src="https://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-tw.png" width="30" height="30" style=" color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 30px; height: 30px; padding-right: 5px;" alt="Twitter" border="0"></a>&nbsp;
+                        <a href="http://www.instagram.com/naturebox" target="_blank"><img src="https://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-insta.png" width="30" height="30" style=" color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 30px; height: 30px; padding-right: 5px;" alt="Instagram" border="0"></a>&nbsp;
+                        <a href="http://www.pinterest.com/naturebox" target="_blank"><img src="https://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-pin.png" width="30" height="30" style=" color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 30px; height: 30px; " alt="Pinterest" border="0"></a>
+                      </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #000000; padding: 30px 0 0 0;" class="mobile-padding">
+                          Check out our <a href="https://support.naturebox.com/hc/en-us" target="_blank" style="color:#000;">FAQ</a> page, chat us at <a href="https://natureboxclub.com/" target="_blank" style="color:#000;">natureboxclub.com,</a> or email us at <a href="mailto:support@natureboxclub.com" target="_blank" style="color:#000;">support@natureboxclub.com</a>
                         </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <!-- LARGE IMAGE SECTION -->
-    
-    <!-- THREE COLUMNS -->
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">	    
-		<tr>
-			<td align="center" style="">
-				<table width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;" class="responsive-table">
-					
-					<tr>
-	                  <td class="no-padding" width="600" style="padding: 85px 0 0 0;width: 600px;">
-	                    <table class="full-width" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 600px">
-	                      <tbody>
-	                        <tr>
-	                          <td class="header" width="600" style="width: 600px;padding: 20px 0 0 10px;" class="top-padding" >
-		                        <!-- SNACK 1 -->
-	                            <table class="header" width="169" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 169px;">
-	                              <tbody>
-	                                <tr>
-	                                  <td class="top-padding" width="169" align="center" style="width: 169px;padding: 0 10px 0 15px;">	                                    
-	                                    <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/recipe_01.jpg" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="169" height="213" alt="SNACK 1" border="0" />
-	                                  </td>
-	                                </tr>
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 18px;text-align: center; padding: 25px 10px 0 10px;">
-											<span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif;">
-											PEANUT BUTTER<br>
-											NOM NOMS
-											</span>
-										</td>
-	                                </tr>
-	                              </tbody>
-	                            </table>
-	                            <!-- END SNACK 1 -->
-	                            <!-- SNACK 2 -->
-	                            <table class="header" width="169" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 169px;">
-	                              <tbody>
-	                                <tr>
-	                                  <td class="top-padding" width="169" align="center" style="width: 169px; padding: 0 10px 0 10px;">	                                    
-	                                    <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/recipe_02.jpg" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="169" height="213" alt="SNACK 2" border="0" />
-	                                  </td>
-	                                </tr>
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 18px;text-align: center; padding: 25px 10px 0 10px;">
-											<span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif;">
-											MINI COCOA<br>
-											BELGIAN WAFFLES
-											</span>
-										</td>
-	                                </tr>
-	                              </tbody>
-	                            </table>
-	                            <!-- END SNACK 2 -->
-	                            <!-- SNACK 3 -->
-	                            <table class="header" width="169" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 169px;">
-	                              <tbody>
-	                                <tr>
-	                                  <td class="top-padding" width="169" align="center" style="width: 169px;padding: 0 10px 0 15px;">	                                    
-	                                    <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/recipe_03.jpg" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="169" height="213" alt="SNACK 3" border="0" />
-	                                  </td>
-	                                </tr>
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 18px;text-align: center; padding: 25px 10px 0 15px;">
-											<span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif;">
-											WHOLE WHEAT<br>
-											CHOCOLATE CHIP<br>
-                                            COOKIE BITES
-											</span>
-										</td>
-	                                </tr>
-	                              </tbody>
-	                            </table>
-	                            <!-- END SNACK 3 -->
-	                          </td>
-	                        </tr>
-	                      </tbody>
-	                    </table>
-	                  </td>
-	                </tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-    <!--THREE COLUMNS -->
-
-    <!-- LARGE IMAGE SECTION -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-            <td bgcolor="#ffffff" align="center" >
-                <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" class="responsive-table" >
-                    <tr>
-                        <td class="padding-sides">
-                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                <tr>
-                                   <td>
-                                      <table bgcolor="EFEFEF" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                            <!-- Image -->
-                                            <tr>
-                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                                        <tr> 
-                                                            <!-- below this, If Image is a different size please change height accordingly   -->
-                                                            <td height="239" style="height: 239px; vertical-align: middle" valign="bottom">
-                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                                    <tr>
-                                                                        <td style="padding:60px 0 0 0;" align="center" class="padding">
-                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
-                                                                                <tr>
-                                                                                    <td align="center" class="padding-sides">
-                                                                                        <!-- BULLETPROOF BUTTON -->
-                                                                                        <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
-                                                                                            <tr>
-                                                                                                <td align="center" style="-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;" bgcolor="#61b24a" style="background-color:#61b24a;">
-                                                                                                    <a href="https://litmus.com" target="_blank" style="font-family: Helvetica, Arial, sans-serif; color:#ffffff; text-decoration: none; font-size:18px; letter-spacing: 1px; text-transform: normal;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 17px 19px; border:1px solid #61b24a; display: inline-block;" class="mobile-button">
-                                                                                                            <!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;&nbsp;<![endif]-->
-                                                                                                            Get 50% off your first order
-                                                                                                            <!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;&nbsp;<![endif]-->
-                                                                                                    </a>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <!-- End Image -->
-                                      </table>
-                                   </td>
-                                </tr>
-                            </table>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #000000; padding: 10px 0 0 0;">
+                          Copyright &copy;&nbsp; 2016 %%Member_Busname%%<br/>
+                          %%Member_Addr%%<br/> %%Member_City%%, %%Member_State%% %%Member_PostalCode%%
                         </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <!-- LARGE IMAGE SECTION -->     
-    
-    
-    <!-- THREE COLUMNS -->
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">	    
-		<tr>
-			<td align="center" style="">
-				<table width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;" class="responsive-table">
-					<tr>
-						<td style="padding: 75px 0 0 0;">
-							<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-								<tr>
-									<td align="center">
-										<img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/membership.png" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="400" height="16" alt="Why NatureBoxClub" border="0" />
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-	                  <td class="no-padding" width="600" style="padding: 15px 0 0 0;width: 600px;">
-	                    <table class="full-width" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 600px">
-	                      <tbody>
-	                        <tr>
-	                          <td class="header" width="600" style="width: 600px;padding: 20px 0 0 10px;" class="top-padding" >
-		                        <!-- DON'T LIKE IT DON'T EAT IT -->
-	                            <table class="header" width="190" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 190px;">
-	                              <tbody>
-	                                <tr>
-	                                  <td class="top-padding" width="190" align="center" style="width: 190px;">	                                    
-	                                    <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-calendar.png" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="91" height="91" alt="Don't Like it, don't eat it" border="0" />
-	                                  </td>
-	                                </tr>
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 18px;text-align: center; padding: 5px 0 0 0;">
-											<span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif;">
-											Always new snacks
-											</span>
-										</td>
-	                                </tr>	                                		
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12px;text-align: center; padding: 5px 0 0 0;">
-											Over 100 snacks to choose from and new ones added every month.
-										</td>
-	                                </tr>
-	                              </tbody>
-	                            </table>
-	                            <!-- END DON'T LIKE IT DON'T EAT IT -->
-	                            <!-- SNACKS WITH BENEFITS -->
-	                            <table class="header" width="200" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 200px;">
-	                              <tbody>
-	                                <tr>
-	                                  <td class="top-padding" width="200" align="center" style="width: 200px;">	                                    
-	                                    <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/benefits.jpg" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="91" height="91" alt="Don't Like it, don't eat it" border="0" />
-	                                  </td>
-	                                </tr>
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 18px;text-align: center; padding: 5px 0 0 0;">
-											<span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif;">
-											Snacks with benefits
-											</span>
-										</td>
-	                                </tr>
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12px;text-align: center; padding: 5px 0 0 12px;">
-											Commitment free snacking-change, skip, or cancel at any time.
-										</td>
-	                                </tr>
-	                              </tbody>
-	                            </table>
-	                            <!-- END SNACKS WITH BENEFITS -->
-	                            <!-- FREE SHIPPING -->
-	                            <table class="header" width="180" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;width: 180px;">
-	                              <tbody>
-	                                <tr>
-	                                  <td class="top-padding" width="180" align="center" style="width: 180px;">	                                    
-	                                    <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-package.png" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="91" height="91" alt="Don't Like it, don't eat it" border="0" />
-	                                  </td>
-	                                </tr>
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 18px;text-align: center; padding: 5px 0 0 0;">
-											<span style="font-family: 'Fjalla One', Arial, Helvetica, sans-serif;">
-											Free Delivery
-											</span>
-										</td>
-	                                </tr>
-	                                <tr>
-		                                <td style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12px;text-align: center; padding: 5px 0 0 0;">
-											On all orders over $25.
-										</td>
-	                                </tr>
-	                              </tbody>
-	                            </table>
-	                            <!-- END FREE SHIPPING -->
-	                          </td>
-	                        </tr>
-                            <tr>
-                                <td style="padding: 40px 0 0 0;">
-                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
-                                        <tr>
-                                            <td align="center">
-                                                <img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/divider.png" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none;" width="400" height="16" alt="Why NatureBoxClub" border="0" />
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>                            
-	                      </tbody>
-	                    </table>
-	                  </td>
-	                </tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-    <!--THREE COLUMNS -->
-
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
-        <tr>
-            <td bgcolor="#ffffff" align="center" style="padding: 30px 0 0 0;">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
-                    <tr>
-                        <td align="center" class="padding-copy">
-                            <!-- UNSUBSCRIBE  -->
-                            <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="responsive-table">
-                                <tr>
-                                    <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #666666; padding: 30px 0 0 0;">
-                                        <a href="#" target="_blank"><img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-fb.png" width="38" height="40" style=" color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 38px; height: 40px;" alt="Fluid images" border="0" class="img-max"></a>&nbsp;
-                                        <a href="#" target="_blank"><img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-tw.png" width="38" height="40" style=" color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 38px; height: 40px;" alt="Fluid images" border="0" class="img-max"></a>&nbsp;
-                                        <a href="#" target="_blank"><img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-insta.png" width="38" height="40" style=" color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 38px; height: 40px;" alt="Fluid images" border="0" class="img-max"></a>&nbsp;
-                                        <a href="#" target="_blank"><img src="http://image.s6.exacttarget.com/lib/fe97127074650c7f73/m/4/080916-pin.png" width="38" height="40" style=" color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 13px; width: 38px; height: 40px;" alt="Fluid images" border="0" class="img-max"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #000000; padding: 30px 0 0 0;" class="mobile-padding">
-                                        Check out our <a href="https://support.naturebox.com/hc/en-us" target="_blank" style="color:#000;">FAQ</a> page, chat us at <a href="https://natureboxclub.com/" target="_blank" style="color:#000;">natureboxclub.com,</a> or email us at <a href="mailto:support@natureboxclub.com" target="_blank" style="color:#000;">
-support@natureboxclub.com
-                                        </a>
-	                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #000000; padding: 10px 0 0 0;">
-                                        Copyright &copy;&nbsp; 2016 %%Member_Busname%%<br/>
-                                        %%Member_Addr%%<br/> %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
-                                        <a href="%%profile_center_url%%" alias="Update Profile" style="color:#000000; text-decoration:none;">Update Profile</a>
-                                        |
-                                          <a href="%%unsub_center_url%%"style="color:#000000; text-decoration:none;" alias="Unsubscribe">Unsubscribe</a>
-
-                                    </td>
-                                </tr>
-
-                            </table>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color: #666666; padding: 5px 0 10px 0; text-transform:uppercase; text-align:center;" class="text-center">
+                          <a class="unsub-text" href="%%profile_center_url%%" alias="Update Profile" style="color:#000000; text-decoration:underline;">Update Email Preferences</a>
+                            <span class="mobile-hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                          <a class="unsub-text" href="%%unsub_center_url%%"style="color:#000000; text-decoration:underline;" alias="Unsubscribe">Unsubscribe</a>
                         </td>
-                    </tr>
-                </table>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
             </td>
-        </tr>
-    </table>
-</table><!-- / OUTER CONTAINER (GMAIL) -->
-    
-    
-<div style="display: none; white-space: nowrap; font: 15px courier; line-height:0;"> &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; </div>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</td>
+</tr>
+</table>
+<div style="display:none; white-space:nowrap; font:15px courier; line-height:0"> &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;</div>
 <custom name="opencounter" type="tracking">
 </body>
 </html>
